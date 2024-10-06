@@ -1,0 +1,311 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif; /* Default body font */
+}
+
+/* Headings default font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar .logo {
+  font-family: "Sora", sans-serif;
+}
+
+:root {
+  --purple: #6a2e78;
+  --red: #d72c41;
+  --dark-grey: #353941;
+  --grey: #e5e1e6;
+  --off-white: #f9f8f4;
+  --off-white-t: rgba(249, 248, 244, 0.8);
+  --grey-background: #d3d3cd;
+  --white: #fcfcfb;
+}
+
+/* //////////////////////////////////// */
+/* Navbar */
+/* //////////////////////////////////// */
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.navbar .logo img {
+  height: 200px;
+  width: 200px;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  transition: color 0.35s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: var(--red);
+}
+
+/* //////////////////////////////////// */
+/* Hero Section */
+/* //////////////////////////////////// */
+
+.hero {
+  height: 80vh;
+  background: url("./Media/Homepage\ 2.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  background: var(--off-white-t);
+  padding: 20px;
+  display: flex;
+  border-radius: 100px;
+  width: 700px;
+  height: 60px;
+}
+
+.search-bar input {
+  color: var(--dark-grey);
+  padding: 10px;
+  font-size: 20px;
+  flex: 1;
+  background: none;
+  border: none;
+}
+
+.search-bar button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.search-bar button i {
+  color: var(--red);
+  font-size: 20px;
+}
+
+.search-bar button:hover i {
+  transform: scale(1.3);
+}
+
+/* //////////////////////////////////// */
+/* Featured Listings */
+/* //////////////////////////////////// */
+
+.featured-listings {
+  background-color: var(--off-white);
+  padding: 50px;
+  text-align: center;
+}
+
+.featured-listings h2 {
+  font-family: "Sora", sans-serif;
+  color: var(--dark-grey);
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.listings {
+  display: grid; /* Use grid for layout */
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 20px;
+  column-gap: 20px;
+  justify-items: center;
+}
+
+.listing-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 15px 25px -5px rgba(0, 0, 0, 0.1);
+  transition: ease-in 0.1s;
+}
+
+.listing-card {
+  max-width: 300px; /* Responsiveness */
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  text-align: center;
+  box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.1);
+  position: relative; /* For card effects */
+}
+
+.listing-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.listing-card h3 {
+  font-size: 20px;
+  margin: 10px 0 5px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--red);
+}
+
+.location {
+  margin-top: 7px;
+}
+
+.location,
+.reference {
+  font-size: 14px;
+  color: var(--dark-grey);
+}
+
+.view-all-btn {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 10px 20px;
+  background-color: var(--purple);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.view-all-btn:hover {
+  background-color: var(--red);
+  transition: ease-in 0.15s;
+}
+
+/* //////////////////////////////////// */
+/* About Us */
+/* //////////////////////////////////// */
+
+.about-us {
+  background-image: url("./Media/Homepage.jpg");
+  height: 50vh;
+  background-attachment: fixed; /* Keep the background fixed */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Don't repeat the image */
+  background-size: cover; /* Cover the entire section */
+  min-height: 500px; /* Set a minimum height for the section */
+  padding: 50px 20px; /* Add padding */
+  position: relative; /* Set position to relative for layering */
+  z-index: 0; /* Ensure it stays behind content */
+}
+
+.about-us-title {
+  font-family: "Sora", sans-serif;
+  color: var(--dark-grey);
+  font-size: 32px;
+  margin: 40px 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.about-body {
+  font-family: "Montserrat", sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.about-body p {
+  margin: 20px 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* //////////////////////////////////// */
+/* Our Agents */
+/* //////////////////////////////////// */
+
+.our-agents {
+  padding: 50px;
+  text-align: center;
+}
+
+.our-agents h2 {
+  font-family: "Sora", sans-serif;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.agents {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.agent-card {
+  width: 200px;
+  text-align: center;
+}
+
+.agent-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* //////////////////////////////////// */
+/* Footer */
+/* //////////////////////////////////// */
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+}

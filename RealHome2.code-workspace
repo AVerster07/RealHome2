@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../RealHome"
+	},
+	{
+		"path": "../CTU Projects/Projects/Exercise 1"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "RealHome"
+  }
+}
