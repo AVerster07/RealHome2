@@ -133,20 +133,20 @@ h6,
 
 .listings {
   display: grid; /* Use grid for layout */
-  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  column-gap: 20px;
   justify-items: center;
 }
 
 .listing-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.03); /* adjust according to .listing-card width */
   box-shadow: 0px 15px 25px -5px rgba(0, 0, 0, 0.1);
   transition: ease-in 0.1s;
 }
 
 .listing-card {
-  max-width: 300px; /* Responsiveness */
+  width: 95%;
+  margin: 0 100px;
   background: #fff;
   padding: 15px;
   border-radius: 7px;
@@ -248,12 +248,28 @@ h6,
 .our-agents {
   padding: 50px;
   text-align: center;
+  height: 50vh;
 }
 
 .our-agents h2 {
   font-family: "Sora", sans-serif;
-  font-size: 32px;
+  font-size: 40px;
   margin-bottom: 40px;
+  color: var(--dark-grey);
+}
+
+.our-agents h3 {
+  font-family: "Sora", sans-serif;
+  font-size: 24px;
+  margin-top: 10px;
+  color: var(--dark-grey);
+}
+
+.our-agents p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+  color: var(--dark-grey);
 }
 
 .agents {
@@ -262,7 +278,7 @@ h6,
   justify-content: center;
 }
 
-.agent-card {
+/* .agent-card {
   width: 200px;
   text-align: center;
 }
@@ -272,19 +288,25 @@ h6,
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
-}
+} */
 
 /* //////////////////////////////////// */
-/* Footer */
+/* Footer Section */
 /* //////////////////////////////////// */
 
 footer {
-  background-color: #333;
+  background-color: var(--dark-grey);
   color: white;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-logo {
+  height: 100px;
+  width: 100px;
 }
 
 footer .footer-content {
@@ -303,6 +325,7 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* Copyright section */
 footer p {
   margin: 0;
   text-align: center;
