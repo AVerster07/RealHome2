@@ -151,3 +151,18 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
     alert("Please fill out all fields.");
   }
 });
+
+const navToggle = document.querySelector(".nav-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+navToggle.addEventListener("click", () => {
+  const visibility = navLinks.getAttribute("data-visible");
+
+  if (visibility === "false") {
+    navLinks.setAttribute("data-visible", "true");
+    navToggle.setAttribute("aria-expanded", "true");
+  } else {
+    navLinks.setAttribute("data-visible", "false");
+    navToggle.setAttribute("aria-expanded", "false");
+  }
+});
