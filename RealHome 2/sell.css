@@ -1,0 +1,107 @@
+/* Sell Page Styles */
+.sell-property {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sell-property h2 {
+  font-family: "Sora", sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-section {
+  margin-bottom: 30px;
+}
+
+.form-section h3 {
+  font-family: "Sora", sans-serif;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.form-section label {
+  font-family: "Montserrat", sans-serif;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section input[type="tel"],
+.form-section input[type="number"],
+.form-section textarea,
+.form-section select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+.form-section input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.form-section input[type="file"] {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: "Sora", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Footer styling (consistent with the rest of the site) */
+footer {
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-logo img {
+  width: 120px;
+}
+
+footer .footer-links a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+footer .footer-user a {
+  color: white;
+  text-decoration: none;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
