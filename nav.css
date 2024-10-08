@@ -1,0 +1,69 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif; /* Default body font */
+}
+
+/* Headings default font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar .logo {
+  font-family: "Sora", sans-serif;
+}
+
+/* Variables */
+:root {
+  --purple: #6a2e78;
+  --red: #d72c41;
+  --dark-grey: #353941;
+  --grey: #e5e1e6;
+  --off-white: #f9f8f4;
+  --off-white-t: rgba(249, 248, 244, 0.8);
+  --grey-background: #d3d3cd;
+  --white: #fcfcfb;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 5%;
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  top: 0;
+  background-color: var(--off-white);
+}
+
+.navbar .logo img {
+  height: 150px;
+  width: 150px;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: var(--dark-grey);
+  font-size: 20px !important;
+  font-weight: bold !important;
+  transition: color 0.35s ease, transform 0.35s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: var(--red);
+  transform: translateY(-5px); /* Add subtle hover effect */
+}

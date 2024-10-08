@@ -7,9 +7,6 @@
 
 body {
   font-family: "Montserrat", sans-serif; /* Default body font */
-  line-height: 1.6;
-  background-color: var(--grey-background);
-  color: var(--dark-grey);
 }
 
 /* Headings default font */

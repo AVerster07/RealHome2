@@ -1,17 +1,57 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif; /* Default body font */
+  background-color: var(--off-white);
+}
+
+/* Headings default font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar .logo {
+  font-family: "Sora", sans-serif;
+}
+
+/* Variables */
+:root {
+  --purple: #6a2e78;
+  --red: #d72c41;
+  --dark-grey: #353941;
+  --grey: #e5e1e6;
+  --off-white: #f9f8f4;
+  --off-white-t: rgba(249, 248, 244, 0.8);
+  --grey-background: #d3d3cd;
+  --white: #fcfcfb;
+}
+
+/* //////////////////////////////////// */
 /* Sell Page Styles */
+/* //////////////////////////////////// */
+
 .sell-property {
   max-width: 800px;
-  margin: 50px auto;
+  margin: 200px auto 50px auto;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .sell-property h2 {
   font-family: "Sora", sans-serif;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  color: var(--dark-grey);
+  font-size: 36px;
 }
 
 .form-section {
@@ -22,12 +62,14 @@
   font-family: "Sora", sans-serif;
   margin-bottom: 15px;
   font-size: 1.4rem;
+  color: var(--dark-grey);
 }
 
 .form-section label {
   font-family: "Montserrat", sans-serif;
   display: block;
   margin-bottom: 8px;
+  color: var(--dark-grey);
 }
 
 .form-section input[type="text"],
@@ -43,6 +85,7 @@
   border-radius: 5px;
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
+  color: var(--dark-grey);
 }
 
 .form-section input[type="checkbox"] {
@@ -58,7 +101,7 @@ button[type="submit"] {
   display: block;
   width: 100%;
   padding: 15px;
-  background-color: #4caf50;
+  background-color: var(--red);
   color: white;
   border: none;
   border-radius: 5px;
@@ -69,39 +112,5 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-/* Footer styling (consistent with the rest of the site) */
-footer {
-  padding: 20px;
-  background-color: #333;
-  color: white;
-  text-align: center;
-}
-
-footer .footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-footer .footer-logo img {
-  width: 120px;
-}
-
-footer .footer-links a {
-  color: white;
-  margin-right: 20px;
-  text-decoration: none;
-}
-
-footer .footer-user a {
-  color: white;
-  text-decoration: none;
-}
-
-footer p {
-  margin-top: 10px;
-  font-size: 0.9rem;
+  background-color: var(--purple);
 }

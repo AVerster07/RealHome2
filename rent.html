@@ -3,21 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RealHome - Rent Properties</title>
+    <title>RealHome | Rent</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Sora:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="rent.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
-    <!-- Header Section (same as in index.html) -->
+    <!-- //////////////////////////////////////// -->
+    <!-- Header Section -->
+    <!-- //////////////////////////////////////// -->
+
     <header>
       <nav class="navbar">
         <div class="logo">
-          <img src="path-to-your-logo.png" alt="RealHome Logo" />
+          <img src="./media/logo2.png" alt="RealHome Logo" />
         </div>
         <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
           <li><a href="buy.html">Buy</a></li>
           <li><a href="rent.html">Rent</a></li>
           <li><a href="sell.html">Sell</a></li>
@@ -28,64 +38,140 @@
       </nav>
     </header>
 
+    <!-- //////////////////////////////////////// -->
     <!-- Search and Filter Section -->
+    <!-- //////////////////////////////////////// -->
+
     <section class="search-filter">
       <div class="search-container">
         <input
           type="text"
           placeholder="Search by location"
-          id="search-location-rent"
+          id="search-location"
         />
-        <select id="property-type-rent">
+        <select id="property-type">
           <option value="">Property Type</option>
           <option value="House">House</option>
           <option value="Apartment">Apartment</option>
           <option value="Townhouse">Townhouse</option>
         </select>
-        <select id="price-range-rent">
+        <select id="price-range">
           <option value="">Price Range</option>
-          <option value="0-5000">R0 - R5,000</option>
-          <option value="5000-10000">R5,000 - R10,000</option>
-          <option value="10000-15000">R10,000 - R15,000</option>
-          <option value="15000-20000">R15,000 - R20,000</option>
+          <option value="0-10000">R0 - R10 000</option>
+          <option value="10000-20000">R10 000 - R20 000</option>
+          <option value="20000-50000">R20 000 - R50 000</option>
+          <option value="50000-100000">R50 000 - R100 000</option>
         </select>
-        <button onclick="searchRentalProperties()">Search</button>
+        <button onclick="searchProperties()">Search</button>
       </div>
     </section>
 
+    <!-- //////////////////////////////////////// -->
     <!-- Properties Grid -->
+    <!-- //////////////////////////////////////// -->
+
     <section class="properties-list">
-      <h2>Properties for Rent</h2>
+      <h2>Properties to <span style="color: #d72c41">Rent</span></h2>
       <div class="properties-grid">
         <!-- Sample Property Card -->
         <div class="property-card">
-          <img src="path-to-rental-property-image.jpg" alt="Property Image" />
+          <img src="./media/homepage4.jpg" alt="Property Image" />
           <div class="property-info">
-            <h3>2 Bedroom Apartment</h3>
-            <p>Sandton, Gauteng</p>
-            <p>Rent: R8,500 p/m</p>
+            <h3>R15 000 p/m</h3>
+            <h4>3 Bedroom Townhouse To Rent In Vanderbijlpark SE 2</h4>
+            <p>
+              This spacious townhouse is situated in a secure complex, offering
+              open plan living areas with a lovely wooden kitchen...
+            </p>
+            <div class="property-details">
+              <span><i class="fas fa-bed"></i> 3</span>
+              <span><i class="fas fa-bath"></i> 2</span>
+              <span><i class="fas fa-car"></i> 2</span>
+              <span><i class="fas fa-paw"></i> Pet-friendly</span>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat for other properties -->
+        <div class="property-card">
+          <img src="./media/homepage3.jpg" alt="Property Image" />
+          <div class="property-info">
+            <h3>R8 500 p/m</h3>
+            <h4>2 Bedroom House To Rent In Moreleta Park</h4>
+            <p>
+              This modern house is in a secure estate and offers convenient
+              living, perfect for young professionals...
+            </p>
+            <div class="property-details">
+              <span><i class="fas fa-bed"></i> 2</span>
+              <span><i class="fas fa-bath"></i> 1</span>
+              <span><i class="fas fa-car"></i> 1</span>
+              <span><i class="fas fa-paw"></i> Pet-friendly</span>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat for other properties -->
+        <div class="property-card">
+          <img src="./media/homepage1.jpg" alt="Property Image" />
+          <div class="property-info">
+            <h3>R45 000 p/m</h3>
+            <h4>2 Bedroom Apartment To Rent In Camps Bay</h4>
+            <p>
+              This modern apartment is in a secure estate and offers convenient
+              living, perfect for young professionals...
+            </p>
+            <div class="property-details">
+              <span><i class="fas fa-bed"></i> 2</span>
+              <span><i class="fas fa-bath"></i> 1</span>
+              <span><i class="fas fa-car"></i> 1</span>
+              <span><i class="fas fa-paw"></i> Pet-friendly</span>
+            </div>
           </div>
         </div>
         <!-- Repeat for other properties -->
       </div>
     </section>
 
-    <!-- Footer Section (same as in index.html) -->
-    <footer>
+    <!-- //////////////////////////////////////// -->
+    <!-- Footer Section -->
+    <!-- //////////////////////////////////////// -->
+
+    <footer role="navigation">
       <div class="footer-content">
-        <div class="footer-logo">
-          <img src="path-to-your-logo.png" alt="RealHome Logo" />
+        <div class="footer-logo-section">
+          <img
+            class="footer-logo"
+            src="./media/logo2.png"
+            alt="RealHome Logo"
+          />
         </div>
         <div class="footer-links">
           <a href="buy.html">Buy</a>
           <a href="rent.html">Rent</a>
           <a href="sell.html">Sell</a>
+          <a href="agents.html">Agents</a>
+          <a href="favourites.html">Favourites</a>
         </div>
         <div class="footer-user">
-          <a href="login.html"><i class="user-icon"></i> Login</a>
+          <a href="login.html"><i class="fas fa-user"></i> Login</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
         </div>
       </div>
-      <p>&copy; 2024 Powered by Us</p>
+      <div class="footer-copyright">
+        <p>&copy; 2024 Powered by Us</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>

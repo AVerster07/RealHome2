@@ -1,7 +1,45 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif; /* Default body font */
+  background-color: var(--off-white);
+}
+
+/* Headings default font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar .logo {
+  font-family: "Sora", sans-serif;
+}
+
+/* Variables */
+:root {
+  --purple: #6a2e78;
+  --red: #d72c41;
+  --dark-grey: #353941;
+  --grey: #e5e1e6;
+  --off-white: #f9f8f4;
+  --off-white-t: rgba(249, 248, 244, 0.8);
+  --grey-background: #d3d3cd;
+  --white: #fcfcfb;
+}
+
+/* //////////////////////////////////// */
 /* Agents Page Styles */
+/* //////////////////////////////////// */
+
 .agents-section {
   max-width: 1200px;
-  margin: 50px auto;
+  margin: 200px auto 50px auto;
   padding: 20px;
   text-align: center;
 }
@@ -10,7 +48,7 @@
   font-family: "Sora", sans-serif;
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #333;
+  color: var(--dark-grey);
 }
 
 .agents-container {
@@ -20,18 +58,19 @@
 }
 
 .agent-card {
-  background-color: #f4f4f4;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 250px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 400px;
   margin: 20px;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
-  transition: transform 0.3s ease;
 }
 
 .agent-card:hover {
-  transform: translateY(-10px);
+  transform: scale(1.03);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .agent-photo {
@@ -44,18 +83,18 @@
   font-family: "Sora", sans-serif;
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #333;
+  color: var(--dark-grey);
 }
 
 .agent-card p {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
-  color: #666;
+  color: var(--dark-grey);
   margin-bottom: 10px;
 }
 
 .contact-agent-btn {
-  background-color: #4caf50;
+  background-color: var(--purple);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -67,39 +106,5 @@
 }
 
 .contact-agent-btn:hover {
-  background-color: #45a049;
-}
-
-/* Footer styles (reused across pages) */
-footer {
-  padding: 20px;
-  background-color: #333;
-  color: white;
-  text-align: center;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-logo img {
-  width: 120px;
-}
-
-.footer-links a {
-  color: white;
-  margin-right: 20px;
-  text-decoration: none;
-}
-
-.footer-user a {
-  color: white;
-  text-decoration: none;
-}
-
-footer p {
-  margin-top: 10px;
-  font-size: 0.9rem;
+  background-color: var(--red);
 }

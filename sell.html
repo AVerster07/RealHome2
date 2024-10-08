@@ -8,19 +8,56 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Sora:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="sell.css" />
+    <link rel="stylesheet" href="footer.css" />
   </head>
   <body>
+    <!-- //////////////////////////////////////// -->
+    <!-- Header Section -->
+    <!-- //////////////////////////////////////// -->
+
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./media/logo2.png" alt="RealHome Logo" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="buy.html">Buy</a></li>
+          <li><a href="rent.html">Rent</a></li>
+          <li><a href="sell.html">Sell</a></li>
+          <li><a href="agents.html">Agents</a></li>
+          <li><a href="favourites.html">Favourites</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- //////////////////////////////////////// -->
     <!-- Sell Property Form -->
+    <!-- //////////////////////////////////////// -->
+
     <section class="sell-property">
-      <h2>List Your Property</h2>
+      <h2>List Your <span style="color: #d72c41">Property</span></h2>
       <form
         id="property-form"
         action="submit-property"
         method="POST"
         enctype="multipart/form-data"
       >
+        <!-- //////////////////////////////////////// -->
         <!-- Property Details Section -->
+        <!-- //////////////////////////////////////// -->
+
         <div class="form-section">
           <h3>Property Details</h3>
           <label for="listing-type">Listing Type:</label>
@@ -52,7 +89,10 @@
           <input type="text" id="province" name="province" required />
         </div>
 
+        <!-- //////////////////////////////////////// -->
         <!-- Contact Information Section -->
+        <!-- //////////////////////////////////////// -->
+
         <div class="form-section">
           <h3>Contacts</h3>
           <label for="seller-name">Seller/Landlord Name:</label>
@@ -74,7 +114,10 @@
           <input type="tel" id="agent-mobile" name="agent-mobile" />
         </div>
 
+        <!-- //////////////////////////////////////// -->
         <!-- Marketing Section -->
+        <!-- //////////////////////////////////////// -->
+
         <div class="form-section">
           <h3>Marketing</h3>
           <label for="list-price">List Price (R):</label>
@@ -111,7 +154,10 @@
           />
         </div>
 
+        <!-- //////////////////////////////////////// -->
         <!-- Features Section -->
+        <!-- //////////////////////////////////////// -->
+
         <div class="form-section">
           <h3>Features</h3>
           <label for="pets-allowed">Pets Allowed:</label>
@@ -161,7 +207,10 @@
           <input type="checkbox" id="flatlet" name="features" value="Flatlet" />
         </div>
 
+        <!-- //////////////////////////////////////// -->
         <!-- Additional Features Section -->
+        <!-- //////////////////////////////////////// -->
+
         <div class="form-section">
           <h3>Additional Features</h3>
           <textarea
@@ -177,22 +226,46 @@
       </form>
     </section>
 
-    <!-- Footer Section (same as in index.html) -->
-    <footer>
+    <!-- //////////////////////////////////////// -->
+    <!-- Footer Section -->
+    <!-- //////////////////////////////////////// -->
+    <footer role="navigation">
       <div class="footer-content">
-        <div class="footer-logo">
-          <img src="path-to-your-logo.png" alt="RealHome Logo" />
+        <div class="footer-logo-section">
+          <img
+            class="footer-logo"
+            src="./media/logo2.png"
+            alt="RealHome Logo"
+          />
         </div>
         <div class="footer-links">
           <a href="buy.html">Buy</a>
           <a href="rent.html">Rent</a>
           <a href="sell.html">Sell</a>
+          <a href="agents.html">Agents</a>
+          <a href="favourites.html">Favourites</a>
         </div>
         <div class="footer-user">
-          <a href="login.html"><i class="user-icon"></i> Login</a>
+          <a href="login.html"><i class="fas fa-user"></i> Login</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
         </div>
       </div>
-      <p>&copy; 2024 Powered by Us</p>
+      <div class="footer-copyright">
+        <p>&copy; 2024 Powered by Us</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
