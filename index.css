@@ -81,7 +81,7 @@ h6,
 
 .hero {
   height: 80vh;
-  background: url("./Media/Homepage\ 2.jpg") no-repeat center center/cover;
+  background: url("/Media/Homepage3.jpg") no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,7 +96,7 @@ h6,
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2); /* Add overlay for readability */
+  background-color: rgba(0, 0, 0, 0.1); /* Add overlay for readability */
   z-index: -1;
 }
 
@@ -231,7 +231,7 @@ h6,
 /* //////////////////////////////////// */
 
 .about-us {
-  background-image: url("./Media/Homepage.jpg");
+  background-image: url("/Media/Homepage5.jpg");
   height: 50vh;
   background-attachment: fixed;
   background-position: center;
@@ -239,12 +239,26 @@ h6,
   min-height: 550px;
   padding-top: 50px;
   position: relative;
+  z-index: 0;
+}
+
+.about-us::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Add overlay for readability */
+  z-index: -1;
 }
 
 .about-us-title {
   font-family: "Sora", sans-serif;
-  color: var(--dark-grey);
+  color: #fff;
   font-size: 32px;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
   text-align: center;
   z-index: 1;
 }
@@ -257,8 +271,14 @@ h6,
 }
 
 .about-body p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
   padding: 20px 0;
-  line-height: 1.8;
+  line-height: 1.3;
+  color: var(--off-white);
 }
 
 /* //////////////////////////////////// */
@@ -266,7 +286,7 @@ h6,
 /* //////////////////////////////////// */
 
 .our-agents {
-  padding-top: 70px;
+  padding-top: 50px;
   padding-bottom: 100px;
   text-align: center;
   background-color: var(--off-white);
@@ -275,7 +295,8 @@ h6,
 .our-agents h2 {
   font-family: "Sora", sans-serif;
   font-size: 40px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+  /* padding-top: -20px; */
   color: var(--dark-grey);
 }
 
