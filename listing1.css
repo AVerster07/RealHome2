@@ -1,3 +1,15 @@
+/* Variables */
+:root {
+    --purple: #6a2e78;
+    --red: #d72c41;
+    --dark-grey: #353941;
+    --grey: #e5e1e6;
+    --off-white: #f9f8f4;
+    --off-white-t: rgba(249, 248, 244, 0.8);
+    --grey-background: #d3d3cd;
+    --white: #fcfcfb;
+}  
+
 body {
     margin: 0;
     padding: 0;
@@ -10,11 +22,18 @@ header {
     padding: 20px;
 }
 
+p {
+    font-size: 16px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
 .slideshow-container {
     max-width: 1000px;
     position: relative;
-    margin: 50px auto;
-    padding: 90px 0;
+    margin: 50px auto 0 auto;
+    padding-top: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +50,7 @@ header {
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 57%;
     transform: translateY(-50%); 
     width: 30px; 
     padding: 10px;
@@ -65,7 +84,7 @@ header {
 
 .dot-container {
     position: absolute;
-    bottom: 20px;
+    /* bottom: 20px; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -87,58 +106,129 @@ header {
 }
 
 .details-container {
-    position: absolute;
-    bottom: -161px;
-    right: 335px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     border-radius: 5px;
 }
 
 .property-details1 {
-    background-color: gray;
+    background-color: #fff;
     width: 800px;
     margin: 20px 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    outline: auto;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: var(--dark-grey);
+}
+
+.property-details2 {
+    background-color: #fff;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.property-details2 span {
+    font-size: 16px;
+    color: #555;
+}
+
+.property-details2 i {
+    align-items: center;
+}
+
+.property_info {
+    background-color: #fff;
+    width: 800px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: var(--dark-grey);
+    text-align: center;
+    padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.property-details2 {
-    background-color: gray;
-    width: 800px;
+.property-main {
     display: flex;
-    flex-direction: column;
-}
-
-.property-details2 span {
-    font-size: 18px;
-    color: rgb(67, 61, 61);
-}
-
-.property_info {
-    position: absolute;
-    bottom: -390px;
-    right: 355px;
-    background-color: gray;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    outline: auto;
-    width: 800px;
-    margin-top: 20px;
-    font-size: 18px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 20px;
-    border-radius: 5px;
+    margin: -10px 0 -100px 0;
 }
 
 .prop-paragraph {
     margin-bottom: 20px;
     text-align: left;
+}
+
+.available_rooms p {
+    text-align: left;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+}
+
+.view-all-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 12px 24px;
+    background-color: var(--purple);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+  
+.view-all-btn:hover {
+    background-color: var(--red);
+}
+
+.our-agents {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-color: var(--off-white);
+}
+
+.agents {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.agent-card {
+    width: 220px;
+    text-align: center;
+}
+  
+.agent-card img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+  
+.agent-card:hover img {
+    transform: scale(1.1);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
 }

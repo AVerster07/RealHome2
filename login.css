@@ -1,12 +1,42 @@
 /* Login Page Styles */
+
+/* Variables */
+:root {
+  --purple: #6a2e78;
+  --red: #d72c41;
+  --dark-grey: #353941;
+  --grey: #e5e1e6;
+  --off-white: #f9f8f4;
+  --off-white-t: rgba(249, 248, 244, 0.8);
+  --grey-background: #d3d3cd;
+  --white: #fcfcfb;
+}
+
+body {
+  background-color: var(--off-white);
+}
+
+.logo {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
 .login-section {
   max-width: 500px;
-  margin: 80px auto;
+  margin: 180px auto 80px auto;
   padding: 20px;
-  background-color: #f4f4f4;
+  background-color: var(--off-white);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  border: 1px solid #ccc;
 }
 
 .login-section h2 {
@@ -18,6 +48,7 @@
 
 .login-form,
 .signup-form {
+  
   display: flex;
   flex-direction: column;
 }
@@ -67,38 +98,4 @@ p a {
 
 p a:hover {
   text-decoration: underline;
-}
-
-/* Footer styles */
-footer {
-  padding: 20px;
-  background-color: #333;
-  color: white;
-  text-align: center;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-logo img {
-  width: 120px;
-}
-
-.footer-links a {
-  color: white;
-  margin-right: 20px;
-  text-decoration: none;
-}
-
-.footer-user a {
-  color: white;
-  text-decoration: none;
-}
-
-footer p {
-  margin-top: 10px;
-  font-size: 0.9rem;
 }
