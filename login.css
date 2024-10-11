@@ -16,9 +16,10 @@ body {
   background-color: var(--off-white);
 }
 
-.logo {
-  max-width: 300px;
-  max-height: 300px;
+.main-logo {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
 }
 
 header {
@@ -30,7 +31,7 @@ header {
 
 .login-section {
   max-width: 500px;
-  margin: 180px auto 80px auto;
+  margin: 80px auto 80px auto;
   padding: 20px;
   background-color: var(--off-white);
   border-radius: 10px;
