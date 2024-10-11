@@ -1,144 +1,288 @@
-body {
-    margin: 0;
-    padding: 0;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+body {
+  font-family: "Montserrat", sans-serif; /* Default body font */
 }
+
+/* Headings default font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar .logo {
+  font-family: "Sora", sans-serif;
+}
+
+/* Variables */
+:root {
+  --purple: #6a2e78;
+  --red: #d72c41;
+  --dark-grey: #353941;
+  --grey: #e5e1e6;
+  --off-white: #f9f8f4;
+  --off-white-t: rgba(249, 248, 244, 0.8);
+  --grey-background: #d3d3cd;
+  --white: #fcfcfb;
+}
+
+body {
+  background-color: var(--off-white);
+}
+
+/* //////////////////////////////////// */
+/* Slideshow */
+/* //////////////////////////////////// */
 
 .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: 50px auto;
-    padding: 90px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  max-width: 1000px;
+  position: relative;
+  margin: 120px auto 0 auto;
+  padding-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main {
-    border-radius: 3px !important;
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    outline: auto;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%); 
-    width: 30px; 
-    padding: 10px;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    font-size: 24px;
-    background-color: rgba(0, 0, 0, 0.5); 
-    transition: background-color 0.3s ease, height 0.3s ease;
-    border-radius: 3px;
-    user-select: none;
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-  
+.prev,
 .next {
-    right: 0px;
-    border-radius: 3px;
-}
-  
-.prev {
-    left: 0px;
-    border-radius: 3px;
+  cursor: pointer;
+  position: absolute;
+  top: 57%;
+  transform: translateY(-50%);
+  width: 30px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease, height 0.3s ease;
+  border-radius: 3px;
+  user-select: none;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8); 
-    height: 502px; 
+.next {
+  right: 0px;
+  border-radius: 3px;
+}
+
+.prev {
+  left: 0px;
+  border-radius: 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 502px;
 }
 
 .dot-container {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dot {
-    cursor: pointer;
-    height: 10px;
-    width: 10px;
-    margin: 0 2px;
-    background-color: rgba(0, 0, 0, 0.5); 
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
 }
 
 .dot:hover {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 .details-container {
-    position: absolute;
-    bottom: -161px;
-    right: 335px;
-    padding: 20px;
-    border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
 }
+
+/* //////////////////////////////////// */
+/* Property Details - 1st Block */
+/* //////////////////////////////////// */
 
 .property-details1 {
-    background-color: gray;
-    width: 800px;
-    margin: 20px 0 0 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    outline: auto;
-    border-radius: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  width: 800px;
+  margin: 20px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  color: var(--dark-grey);
 }
 
-.property-details2 {
-    background-color: gray;
-    width: 800px;
-    display: flex;
-    flex-direction: column;
+.property-details1 h3 {
+  font-family: "Sora", sans-serif;
+  color: var(--dark-grey);
+  padding-top: 20px;
+  font-size: 24px;
 }
 
-.property-details2 span {
-    font-size: 18px;
-    color: rgb(67, 61, 61);
+.property-details1 h4 {
+  font-family: "Sora", sans-serif;
+  color: var(--red);
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+.property-details1 p {
+  font-family: "Montserrat", sans-serif;
+  color: var(--dark-grey);
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+.icons {
+  background-color: #fff;
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.icons span {
+  font-size: 16px;
+  color: #555;
+}
+
+.icons i {
+  align-items: center;
+}
+
+/* //////////////////////////////////// */
+/* Property Details - 2nd Block */
+/* //////////////////////////////////// */
+
+.property-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -10px 0 -100px 0;
 }
 
 .property_info {
-    position: absolute;
-    bottom: -390px;
-    right: 355px;
-    background-color: gray;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    outline: auto;
-    width: 800px;
-    margin-top: 20px;
-    font-size: 18px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 20px;
-    border-radius: 5px;
+  background-color: #fff;
+  width: 800px;
+  margin-top: 20px;
+  font-size: 18px;
+  color: var(--dark-grey);
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.property_info h3 {
+    font-family: "Montserrat", sans-serif;
+    color:var(--dark-grey)
+    font-size: 20px;
+  }
+
 .prop-paragraph {
-    margin-bottom: 20px;
-    text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.available_rooms p {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+/* //////////////////////////////////// */
+/* Seller Section */
+/* //////////////////////////////////// */
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40px;
+}
+
+.view-all-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 12px 24px;
+  background-color: var(--purple);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background-color: var(--red);
+}
+
+.our-agents {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  text-align: center;
+  background-color: var(--off-white);
+}
+
+.agents {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.agent-card {
+  width: 220px;
+  text-align: center;
+}
+
+.agent-card img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.agent-card:hover img {
+  transform: scale(1.1);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
 }
