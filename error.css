@@ -1,0 +1,70 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif; /* Default body font */
+  background-color: var(--off-white);
+}
+
+/* Headings default font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar .logo {
+  font-family: "Sora", sans-serif;
+}
+
+/* Variables */
+:root {
+  --purple: #6a2e78;
+  --red: #d72c41;
+  --dark-grey: #353941;
+  --grey: #e5e1e6;
+  --off-white: #f9f8f4;
+  --off-white-t: rgba(249, 248, 244, 0.8);
+  --grey-background: #d3d3cd;
+  --white: #fcfcfb;
+}
+
+.error-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 73vh;
+  /* margin-top: 200px; */
+}
+
+.error-message h2 {
+  font-family: "Sora", sans-serif;
+  font-size: 40px;
+  color: var(--dark-grey);
+  font-weight: bold;
+}
+
+.error-message p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  color: var(--dark-grey);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.error-message a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: var(--red);
+  text-decoration: none;
+}
+
+.error-message a:hover {
+  transition: 0.3s ease, transform 0.3s ease;
+  color: var(--purple);
+}

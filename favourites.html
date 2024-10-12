@@ -3,16 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Favourites - RealHome</title>
+    <title>RealHome | Favourites</title>
+    <link rel="icon" type="image/x-icon" href="./media/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="favourites.css" />
     <link rel="stylesheet" href="footer.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&family=Montserrat:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
+    <!-- //////////////////////////////////////// -->
+    <!-- Header Section -->
+    <!-- //////////////////////////////////////// -->
+
     <header>
       <nav class="navbar">
         <div class="logo">
@@ -30,23 +45,34 @@
       </nav>
     </header>
 
+    <!-- //////////////////////////////////////// -->
+    <!-- Favourites Section -->
+    <!-- //////////////////////////////////////// -->
     <main>
       <section class="favourites-section">
         <h2>Your Favourite Listings</h2>
         <div class="favourites-container">
           <!-- Favourite Property 1 -->
           <div class="favourite-card">
-            <img src="./media/favourites_image1.png" alt="Property 1" class="favourite-photo" />
-            <h3>3 Bedroom House in Johannesburg</h3>
-            <p>Price: R1,500,000</p>
+            <img
+              src="./media/favourites_image1.png"
+              alt="Property 1"
+              class="favourite-photo"
+            />
+            <h3>3 Bedroom House</h3>
+            <p>Price: R1 500 000</p>
             <p>Location: Johannesburg, Gauteng</p>
             <button class="remove-favourite-btn">Remove from Favourites</button>
           </div>
           <!-- Favourite Property 2 -->
           <div class="favourite-card">
-            <img src="./media/favourites_image2.png" alt="Property 2" class="favourite-photo" />
-            <h3>2 Bedroom Apartment in Cape Town</h3>
-            <p>Price: R950,000</p>
+            <img
+              src="./media/favourites_image2.png"
+              alt="Property 2"
+              class="favourite-photo"
+            />
+            <h3>2 Bedroom Apartment</h3>
+            <p>Price: R950 000</p>
             <p>Location: Cape Town, Western Cape</p>
             <button class="remove-favourite-btn">Remove from Favourites</button>
           </div>
@@ -54,22 +80,36 @@
         </div>
       </section>
 
+      <!-- //////////////////////////////////////// -->
+      <!-- Wishlist Section -->
+      <!-- //////////////////////////////////////// -->
+
       <section class="wishlist-section">
         <h2>Your Wishlists</h2>
         <div class="wishlist-container">
           <!-- Wishlist 1 -->
           <div class="wishlist-card">
-            <img src="./media/favourites_image3.png" alt="Property 2" class="favourite-photo" />
-            <h3>3 Bedroom House in Sandton</h3>
-            <p>Budget: R2,500,000</p>
+            <img
+              src="./media/favourites_image3.png"
+              alt="Property 2"
+              class="favourite-photo"
+            />
+            <h3>3 Bedroom House</h3>
+            <p>Budget: R2 500 000</p>
+            <p>Location: Johannesburg, Gauteng</p>
             <button class="edit-wishlist-btn">Edit Wishlist</button>
             <button class="remove-wishlist-btn">Remove Wishlist</button>
           </div>
           <!-- Wishlist 2 -->
           <div class="wishlist-card">
-            <img src="./media/favourites_image4.png" alt="Property 2" class="favourite-photo" />
-            <h3>2 Bedroom Apartment in Durban</h3>
+            <img
+              src="./media/favourites_image4.png"
+              alt="Property 2"
+              class="favourite-photo"
+            />
+            <h3>2 Bedroom Apartment</h3>
             <p>Budget: R1,200,000</p>
+            <p>Location: Durban, Kwazulu-Natal</p>
             <button class="edit-wishlist-btn">Edit Wishlist</button>
             <button class="remove-wishlist-btn">Remove Wishlist</button>
           </div>
@@ -78,22 +118,47 @@
       </section>
     </main>
 
-    <footer>
+    <!-- //////////////////////////////////////// -->
+    <!-- Footer Section -->
+    <!-- //////////////////////////////////////// -->
+
+    <footer role="navigation">
       <div class="footer-content">
-        <div class="footer-logo">
-          <img src="./media/logo2.png" alt="RealHome Logo" />
+        <div class="footer-logo-section">
+          <img
+            class="footer-logo"
+            src="./media/logo2.png"
+            alt="RealHome Logo"
+          />
         </div>
         <div class="footer-links">
           <a href="buy.html">Buy</a>
           <a href="rent.html">Rent</a>
           <a href="sell.html">Sell</a>
           <a href="agents.html">Agents</a>
+          <a href="favourites.html">Favourites</a>
         </div>
         <div class="footer-user">
-          <a href="login.html">Login</a>
+          <a href="login.html"><i class="fas fa-user"></i> Login</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
         </div>
       </div>
-      <p>&copy; 2024 RealHome | Powered by Us</p>
+      <div class="footer-copyright">
+        <p>&copy; 2024 Powered by Us</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>

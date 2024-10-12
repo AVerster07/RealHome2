@@ -46,9 +46,10 @@ h6,
 
 .agents-section h2 {
   font-family: "Sora", sans-serif;
-  font-size: 2.5rem;
+  font-size: 32px;
   margin-bottom: 40px;
   color: var(--dark-grey);
+  font-weight: 700;
 }
 
 .agents-container {

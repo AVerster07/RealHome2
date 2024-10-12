@@ -1,3 +1,38 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif; /* Default body font */
+  background-color: var(--off-white);
+}
+
+/* Headings default font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar .logo {
+  font-family: "Sora", sans-serif;
+}
+
+/* Variables */
+:root {
+  --purple: #6a2e78;
+  --red: #d72c41;
+  --dark-grey: #353941;
+  --grey: #e5e1e6;
+  --off-white: #f9f8f4;
+  --off-white-t: rgba(249, 248, 244, 0.8);
+  --grey-background: #d3d3cd;
+  --white: #fcfcfb;
+}
+
 /* Favourites Page Styles */
 .favourites-section,
 .wishlist-section {
@@ -6,10 +41,14 @@
   padding: 20px;
 }
 
+.favourites-section {
+  margin-top: 150px;
+}
+
 .favourites-section h2,
 .wishlist-section h2 {
   font-family: "Sora", sans-serif;
-  font-size: 2.5rem;
+  font-size: 32px;
   margin-bottom: 40px;
   color: #333;
   text-align: center;
@@ -24,10 +63,10 @@
 
 .favourite-card,
 .wishlist-card {
-  background-color: #f4f4f4;
+  background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 400px;
   margin: 20px;
   padding: 20px;
   text-align: center;
@@ -36,11 +75,14 @@
 
 .favourite-card:hover,
 .wishlist-card:hover {
-  transform: translateY(-10px);
+  transform: scale(1.03);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .favourite-photo {
-  width: 100%;
+  width: 350px; /* Uniform size - auto/100% werk nie */
+  height: 200px; /* Uniform size - auto/100% werk nie */
+  height: cover;
   border-radius: 10px;
   margin-bottom: 15px;
 }
@@ -64,7 +106,7 @@
 .remove-favourite-btn,
 .edit-wishlist-btn,
 .remove-wishlist-btn {
-  background-color: #4caf50;
+  background-color: var(--purple);
   color: white;
   padding: 10px 20px;
   border: none;
@@ -79,39 +121,5 @@
 .remove-favourite-btn:hover,
 .edit-wishlist-btn:hover,
 .remove-wishlist-btn:hover {
-  background-color: #45a049;
-}
-
-/* Footer styles */
-footer {
-  padding: 20px;
-  background-color: #333;
-  color: white;
-  text-align: center;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-logo img {
-  width: 120px;
-}
-
-.footer-links a {
-  color: white;
-  margin-right: 20px;
-  text-decoration: none;
-}
-
-.footer-user a {
-  color: white;
-  text-decoration: none;
-}
-
-footer p {
-  margin-top: 10px;
-  font-size: 0.9rem;
+  background-color: var(--red);
 }

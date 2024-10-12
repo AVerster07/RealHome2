@@ -79,11 +79,6 @@ h6,
 .hero {
   height: 80vh;
   background: url("./media/homepage3.jpg") no-repeat center center/cover;
-
-  /* //////////////////////////////////// */
-  /* Test Image */
-  /* //////////////////////////////////// */
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -298,7 +293,6 @@ h6,
   font-family: "Sora", sans-serif;
   font-size: 40px;
   padding-bottom: 40px;
-  /* padding-top: -20px; */
   color: var(--dark-grey);
 }
 
